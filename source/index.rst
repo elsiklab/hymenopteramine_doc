@@ -1,39 +1,34 @@
-.. HymenopteraMine documentation master file, created by
-   sphinx-quickstart on Sun Sep  6 16:05:15 2015.
+.. HymenopteraMine_v1.4 documentation master file, created by
+   sphinx-quickstart on Thu Oct  3 12:00:01 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to HymenopteraMine's documentation!
-===========================================
+HymenopteraMine v1.4 Documentation
+==================================
 
+HymenopteraMine is an integrative resource for genomic data on Hymenoptera, including honeybees, ants, wasps, etc. Powered by `InterMine <http://intermine.org>`_, it provides a user-friendly way to access genomic, proteomic, interaction and literature data. HymenopteraMine is a part of the `Hymenoptera Genome Database <http://www.hymenopteragenome.org>`_.
 
-HymenopteraMine is an integrative resource for genomic data on Hymenoptera, including honeybees, ants, wasps, etc.
+This tutorial is aimed at giving users an introduction to the different parts of HymenopteraMine and how users can make the most of HymenopteraMine.
 
-Link to main site: http://hymenopteragenome.org/hymenopteramine
+.. image:: images/header.png
 
-Link to HGD YouTube Channel with HymenopteraMine Videos: https://www.youtube.com/channel/UC1NVFd9buEtlbA2mcdq0MXQ
+Main site: http://hymenopteragenome.org/hymenopteramine
 
-Link to PDF version of this documentation: https://media.readthedocs.org/pdf/hymenopteramine/stable/hymenopteramine.pdf
+HGD YouTube Channel with HymenopteraMine Videos: https://www.youtube.com/channel/UC1NVFd9buEtlbA2mcdq0MXQ
 
-Link to the available datasets in HymenopteraMine: http://hymenopteragenome.org/hymenopteramine/dataCategories.do
-
-
-Contents:
+List of available datasets in HymenopteraMine: http://hymenopteragenome.org/hymenopteramine/dataCategories.do
 
 .. toctree::
-   :maxdepth: 2
-
-   hymenopteramine
-
-
-
-Click `here <http://www.screencast.com/users/intermine/folders/InterMine/media/e8e3b7e6-b303-408d-bef3-f2cbb4ba722b>`_ for a video tutorial, created by FlyMine, which highlights the features of InterMine.
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   :caption: Table of Contents
+   :maxdepth: 4
+   :hidden:
+   
+   overview
+   searching
+   reports
+   lists
+   mymine
+   api
+   data_sources
+   blast
+   how_to_cite

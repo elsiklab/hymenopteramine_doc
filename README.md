@@ -1,2 +1,2 @@
-# HymenopteraMine_v1.3
-HymenopteraMine v1.3 documentation
+# HymenopteraMine_v1.4
+HymenopteraMine v1.4 documentation
