@@ -21,14 +21,14 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'HymenopteraMine_v1.4'
-copyright = '2019, Elsik Lab'
+project = u'HymenopteraMine_v1.5'
+copyright = '2021, Elsik Lab'
 author = u'Chris Elsik, Aditi Tayal, Colin Diesh, Deepak Unni, Marianne Emery, Hung Nguyen, Darren Hagen'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'v1.4'
+release = u'v1.5'
 
 
 # -- General configuration ---------------------------------------------------
