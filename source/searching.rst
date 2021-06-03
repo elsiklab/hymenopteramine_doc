@@ -3,6 +3,7 @@ Searching in HymenopteraMine
 
 .. role:: raw-html(raw)
     :format: html
+.. |rightArrow| unicode:: U+2B95
 
 There are several ways that users may query HymenopteraMine.
 
@@ -80,14 +81,14 @@ Another method of searching HymenopteraMine is through the use of **templates** 
 
   ..
 
-As an example, the **GO Term --> Gene** template queries HymenopteraMine for all genes having a given GO term.
+As an example, the **GO Term** |rightArrow| **Gene** template queries HymenopteraMine for all genes annotated with a given GO term.
 
 .. figure:: images/template_go_term_gene.png
   :width: 696
   :alt: GO Term --> Gene template
   :figclass: align-center
 
-  Example: GO Term --> Gene template
+  Example: GO Term |rightArrow| Gene template
 
   ..
 
@@ -142,16 +143,18 @@ Click the **Manage Columns** button to customize the results table layout. Edit 
 Optional filters
 ----------------
 
-Some templates have optional filters that are disabled by default. For example, the GO Term --> Gene template has an additional filter for specifying a GO evidence code. To enable this filter, click **ON** below **GO Evidence Code > Code**.
+Some templates have optional filters that are disabled by default. For example, the GO Term |rightArrow| Gene template has an additional filter for specifying an organism. To enable this filter, click **ON** below **optional**.
 
-.. figure:: images/template_go_term_gene_ec_enabled.png
+.. figure:: images/template_go_term_organism_enabled.png
   :width: 696
-  :alt: GO Term --> Gene template with GO evidence code filter enabled
+  :alt: GO Term --> Gene template with organism filter enabled
   :figclass: align-center
 
-  Example: GO Term --> Gene template with GO evidence code filter enabled
+  Example: GO Term |rightArrow| Gene template with organism filter enabled
 
   ..
+  
+**Note:** The Query trail link at the top of the page does not work for templates with optional filters. To edit the template query, navigate back to the template page either by clicking on the template name at the top of the query results page or by selecting the template from the Templates tab.
 
 QueryBuilder
 ~~~~~~~~~~~~
@@ -201,7 +204,7 @@ The following examples give a more in-depth demonstration on how to use the Quer
 Example 1: Querying for protein coding genes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Model browser, click **Show** next to **DB Identifier** and **Symbol**, which will add these fields to the query. Notice that these two fields appear below Gene in the Query Overview section.
+In the Model browser, click **Show** next to **DB Identifier** and **Symbol**, which will add these fields to the query. Notice that these two fields appear below Gene in the **Query Overview** section and at the bottom under **Fields selected for output**.
 
 
 .. figure:: images/ex1_step1.png
@@ -240,7 +243,18 @@ Example 2: Querying for protein coding genes on a particular chromosome
 
 This example will extend the first example to add another constraint to the query.
 
-Begin as in the above example by selecting Gene as the data type, adding DB Identifier and Symbol as fields, and adding the constraint that Biotype is "Protein Coding". In the Model browser, click the + (plus sign) next to the Chromosome feature class to display its attributes.
+After running the query in the above example, click on **Query** at the top of the page next to **Trail** to go back to the model browser and edit the query.
+
+.. figure:: images/ex2_step0.png
+  :width: 400
+  :alt: Click on the query trail to edit the query
+  :figclass: align-center
+
+  Click on the query trail to edit the query
+
+  ..
+
+In the Model browser, click the + (plus sign) next to the Chromosome feature class to display its attributes.
 
 .. figure:: images/ex2_step1.png
   :width: 400
@@ -262,7 +276,7 @@ Then click **Constrain** next to the attribute **DB Identifier**. In the pop-up 
 
   ..
 
-Click the **Show results** button as before to view the results of the query. The columns are the same as in the first example, but notice that now there are only 638 rows in the table (compared to over 500,000 in the first query) due to the additional constraint.
+Click the **Show results** button as before to view the results of the query. The columns are the same as in the first example, but notice that now there are only 625 rows in the table (compared to over 500,000 in the first query) due to the additional constraint.
 
 .. figure:: images/ex2_step3.png
   :width: 696
@@ -278,7 +292,7 @@ Example 3: Querying for protein coding genes on a particular chromosome and thei
 
 This final example extends the above query to display all exons for each protein coding gene.
 
-As above, select Gene as the data type, add DB Identifier and Symbol (under Gene) as fields, and constrain the query to protein coding genes on a chromosome with the DB Identifier `NW_003791143.1`.
+As above, click on **Query** at the top of the results page to go back to the model browser and edit the query.
 
 In the Model browser, scroll down to locate the **Exon** feature class, and click the + (plus sign) next to Exons to display its attributes. Click **Show** next to **DB Identifier** and **Length**.
 
@@ -365,7 +379,7 @@ Click on the input examples to view a representative set of coordinates in each 
 
 The regions may be extended on either side of the genomic coordinates using the slider or the text field next to it. There is also the option to perform a strand-specific region search using the checkbox at the bottom of the form.
 
-As an example, select **A. mellifera** from the **Select Organism** drop-down, click the box next to **Select Feature Types** to uncheck all of the boxes, then check the box next to **Gene**, and enter the following coordinates into the genomic regions search text field:
+As an example, select **A. mellifera** from the **Select Organism** drop-down, check the box next to **Gene** in the **Select Feature Types** section, and enter the following coordinates into the genomic regions search text field:
 ::
 
      LG5:900000..930000

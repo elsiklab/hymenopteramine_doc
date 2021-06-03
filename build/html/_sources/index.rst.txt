@@ -1,9 +1,9 @@
-.. HymenopteraMine_v1.4 documentation master file, created by
+.. HymenopteraMine_intermine documentation master file, created by
    sphinx-quickstart on Thu Oct  3 12:00:01 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-HymenopteraMine v1.4 Documentation
+HymenopteraMine v1.5 Documentation
 ==================================
 
 HymenopteraMine is an integrative resource for genomic data on Hymenoptera, including honeybees, ants, wasps, etc. Powered by `InterMine <http://intermine.org>`_, it provides a user-friendly way to access genomic, proteomic, interaction and literature data. HymenopteraMine is a part of the `Hymenoptera Genome Database <http://www.hymenopteragenome.org>`_.
