@@ -45,7 +45,7 @@ A **Summary** section near the top of the report provides information on the gen
 Alias and DBxref
 ~~~~~~~~~~~~~~~~
 
-The **Alias and DBxref** section displays a table of aliases and database cross references for the gene. In this example, the gene with DB Identifier 412740 has four aliases and two cross references. Click on the text **4 Alias Names** and **2 x Refs** to expand the table with additional rows containing the ID and Source for each alias and DB Identifier and Source for each cross reference.
+The **Alias and DBxref** section displays a table of aliases and database cross references for the gene. In this example, the gene with DB Identifier 412740 has four aliases and two cross references. Click on the text **4 Alias Names** and **2 Cross References** to expand the table with additional rows containing the ID and Source for each alias and DB Identifier and Source for each cross reference.
 
 .. image:: images/report_page_alias_xref.png
   :width: 696

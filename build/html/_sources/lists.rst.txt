@@ -60,6 +60,8 @@ The available widgets are:
 
 The selection of widgets provided on the List Analysis page depend on the contents of the list. In the above example, three widgets appear: Gene Ontology Enrichment, Publication Enrichment, and Pathway Enrichment.
 
+Read the **Important Notes for Enrichment Widgets** for special instructions to avoid false positives.
+
 .. figure:: images/list_widgets.png
   :width: 696
   :alt: Example: Available widgets
