@@ -84,6 +84,7 @@ html_theme = "sphinx_rtd_theme"
 # documentation.
 #
 html_theme_options = {
+    'analytics_id': 'G-LTPHH18H4T',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
