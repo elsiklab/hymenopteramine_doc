@@ -44,23 +44,7 @@ Next, click **Save a list of 5 Genes**. A **List Analysis** page is presented th
 
   ..
 
-The available widgets are:
-
-1. Chromosome Distribution
-
-2. Gene Ontology Enrichment
-
-3. Protein Domain Enrichment
-
-4. Publication Enrichment
-
-5. Pathway Enrichment
-
-6. Orthologues
-
-The selection of widgets provided on the List Analysis page depend on the contents of the list. In the above example, three widgets appear: Gene Ontology Enrichment, Publication Enrichment, and Pathway Enrichment.
-
-Read the **Important Notes for Enrichment Widgets** for special instructions to avoid false positives.
+The available widgets are Gene Ontology Enrichment, Publication Enrichment, and Pathway Enrichment. Read the **Important Notes for Enrichment Widgets** for special instructions to avoid false positives.
 
 .. figure:: images/list_widgets.png
   :width: 696

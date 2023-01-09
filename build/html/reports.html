@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Report Pages &mdash; HymenopteraMine_v1.5 v1.5 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Report Pages &mdash; HymenopteraMine v1.6 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -25,7 +28,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HymenopteraMine_v1.5
+            <a href="index.html" class="icon icon-home"> HymenopteraMine
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -35,14 +38,14 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of HymenopteraMine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="searching.html">Searching in HymenopteraMine</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Report Pages</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#alias-and-dbxref">Alias and DBxref</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#transcript">Transcript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transcripts">Transcripts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#proteins">Proteins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#function">Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#homology">Homology</a></li>
@@ -64,7 +67,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">HymenopteraMine_v1.5</a>
+          <a href="index.html">HymenopteraMine</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -74,7 +77,6 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Report Pages</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/reports.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -82,72 +84,91 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="report-pages">
-<h1>Report Pages<a class="headerlink" href="#report-pages" title="Permalink to this headline">\uf0c1</a></h1>
+  <section id="report-pages">
+<h1>Report Pages<a class="headerlink" href="#report-pages" title="Permalink to this heading"></a></h1>
 <p>Every object (e.g., Gene, Protein, Exon) in HymenopteraMine has a report page. The layout of the report page depends on the data available for the object. Report pages may be accessed by clicking on an object name in the results table after running a query.</p>
-<p>As an example, on the home page of HymenopteraMine, click on the <strong>Protein</strong> tab in the <strong>Popular Templates</strong> section. (Refer to the <a class="reference internal" href="searching.html#templates"><span class="std std-ref">Templates</span></a> section for more details on using templates to search the database.) Click on the <strong>Gene Symbol –&gt; Proteins</strong> template. In the text field, enter <strong>LCCH3</strong>, and select <strong>A. mellifera</strong> as the Organism. Then click <strong>Show Results</strong>.</p>
-<p>Notice that each item in the results table is a hyperlink. Hover over an item to bring up a quick summary window for that item. For example, hover over <strong>LCCH3</strong> to view a summary of the gene with this symbol. The summary contains the gene’s biotype, database identifier, description, length, organism, symbol, and source. Similarly, hover over <strong>Q0GQR5_APIME</strong> to view a summary of the protein with this DB Identifier.</p>
-<div class="align-center figure" id="id1">
+<p>As an example, on the home page of HymenopteraMine, click on the <strong>Proteins</strong> tab in the <strong>Popular Templates</strong> section. (Refer to the <a class="reference internal" href="searching.html#templates"><span class="std std-ref">Templates</span></a> section for more details on using templates to search the database.) Click on the <strong>Gene Symbol</strong> ⮕ <strong>Proteins</strong> template. In the text field, enter <strong>LCCH3</strong>, and select <strong>A. mellifera</strong> as the Organism. Then click <strong>Show Results</strong>.</p>
+<p>Notice that each item in the results table is a hyperlink. Hover over an item to bring up a quick summary window for that item. For example, hover over <strong>LCCH3</strong> to view a summary of the gene with this symbol. The summary contains the gene’s biotype, database identifier, description, length, organism, symbol, and source. Similarly, hover over <strong>Q0GQR5_APIME</strong> to view a summary of the protein with this DB identifier.</p>
+<figure class="align-center align-default" id="id1">
 <a class="reference internal image-reference" href="_images/summary_window_gene.png"><img alt="Summary popup window for gene" src="_images/summary_window_gene.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">Example: Summary window for LCCH3</span></p>
+<figcaption>
+<p><span class="caption-text">Example: Summary window for LCCH3</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 <div class="legend">
 </div>
-</div>
+</figcaption>
+</figure>
 <p>Clicking on an item in the table rather than just hovering over it will bring up its report page. For example, click on LCCH3 in the Gene Symbol column to view its report.</p>
-<div class="align-center figure" id="id2">
+<figure class="align-center align-default" id="id2">
 <a class="reference internal image-reference" href="_images/report_page.png"><img alt="Report page" src="_images/report_page.png" style="width: 696px;" /></a>
-<p class="caption"><span class="caption-text">Report page</span></p>
+<figcaption>
+<p><span class="caption-text">Report page</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 <div class="legend">
 </div>
-</div>
+</figcaption>
+</figure>
 <p>The report page provides a complete description for this gene. The header displays the database identifier, followed by the information from the summary window for the gene (organism, symbol, source, etc.) <strong>Biotype</strong> indicates the type of gene; in this case the type is protein coding.</p>
 <p>The contents of the report page are divided into categories based on the type of information provided.</p>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">\uf0c1</a></h2>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h2>
 <p>A <strong>Summary</strong> section near the top of the report provides information on the gene such as its length, chromosome location, and strand information.</p>
 <a class="reference internal image-reference" href="_images/report_page_summary.png"><img alt="Summary section of report page" src="_images/report_page_summary.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="alias-and-dbxref">
-<h2>Alias and DBxref<a class="headerlink" href="#alias-and-dbxref" title="Permalink to this headline">\uf0c1</a></h2>
-<p>The <strong>Alias and DBxref</strong> section displays a table of aliases and database cross references for the gene. In this example, the gene with DB Identifier 412740 has four aliases and two cross references. Click on the text <strong>4 Alias Names</strong> and <strong>2 Cross References</strong> to expand the table with additional rows containing the ID and Source for each alias and DB Identifier and Source for each cross reference.</p>
+</section>
+<section id="alias-and-dbxref">
+<h2>Alias and DBxref<a class="headerlink" href="#alias-and-dbxref" title="Permalink to this heading"></a></h2>
+<p>The <strong>Alias and DBxref</strong> section displays tables of aliases and database cross references for the gene. In this example, the gene with RefSeq ID 412740 has four aliases and two cross references.</p>
 <a class="reference internal image-reference" href="_images/report_page_alias_xref.png"><img alt="Aliases and database cross references section of report page" src="_images/report_page_alias_xref.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="transcript">
-<h2>Transcript<a class="headerlink" href="#transcript" title="Permalink to this headline">\uf0c1</a></h2>
-<p>The <strong>Transcript</strong> section contains information about the gene model, such as transcripts, exons, etc. It includes a diagram visually representing each transcript with its features highlighted (if applicable). In the case of protein coding genes, a table with protein information is also provided.</p>
+</section>
+<section id="transcripts">
+<h2>Transcripts<a class="headerlink" href="#transcripts" title="Permalink to this heading"></a></h2>
+<p>The <strong>Transcripts</strong> section contains information about the gene model, such as transcripts, exons, etc. It includes a diagram visually representing each transcript with its features highlighted (if applicable). In the case of protein coding genes, a table with protein information is also provided.</p>
 <a class="reference internal image-reference" href="_images/report_page_transcript.png"><img alt="Transcript section of report page" src="_images/report_page_transcript.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="proteins">
-<h2>Proteins<a class="headerlink" href="#proteins" title="Permalink to this headline">\uf0c1</a></h2>
+</section>
+<section id="proteins">
+<h2>Proteins<a class="headerlink" href="#proteins" title="Permalink to this heading"></a></h2>
 <p>The <strong>Proteins</strong> section provides information about the protein product of gene. The comments section gives a brief description about the protein along with the UniProt accession.</p>
 <a class="reference internal image-reference" href="_images/report_page_proteins.png"><img alt="Proteins section of report page" src="_images/report_page_proteins.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="function">
-<h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">\uf0c1</a></h2>
+</section>
+<section id="function">
+<h2>Function<a class="headerlink" href="#function" title="Permalink to this heading"></a></h2>
 <p>The <strong>Function</strong> section displays Gene Ontology annotations for a gene. Annotations are divided into three categories:</p>
 <ul class="simple">
-<li>Cellular Component</li>
-<li>Molecular function</li>
-<li>Biological process</li>
+<li><p>Cellular Component</p></li>
+<li><p>Molecular function</p></li>
+<li><p>Biological process</p></li>
 </ul>
 <p>The GO terms are displayed along with the evidence code indicating how the annotations were derived. If applicable, a table of information on Pathways is also shown.</p>
 <a class="reference internal image-reference" href="_images/report_page_function.png"><img alt="Function section of report page" src="_images/report_page_function.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="homology">
-<h2>Homology<a class="headerlink" href="#homology" title="Permalink to this headline">\uf0c1</a></h2>
+</section>
+<section id="homology">
+<h2>Homology<a class="headerlink" href="#homology" title="Permalink to this heading"></a></h2>
 <p>The <strong>Homology</strong> section includes information on homologues for the gene.</p>
-<a class="reference internal image-reference" href="_images/report_page_homology.png"><img alt="Homology section of report page" src="_images/report_page_homology.png" style="width: 696px;" /></a>
+<figure class="align-center align-default" id="id3">
+<a class="reference internal image-reference" href="_images/report_page_homology.png"><img alt="Homology section of report page (homologues)" src="_images/report_page_homology.png" style="width: 696px;" /></a>
+<figcaption>
+<p><span class="caption-text">Homology section of report page (homologues)</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<div class="legend">
 </div>
-<div class="section" id="publications">
-<h2>Publications<a class="headerlink" href="#publications" title="Permalink to this headline">\uf0c1</a></h2>
+</figcaption>
+</figure>
+<figure class="align-center align-default" id="id4">
+<a class="reference internal image-reference" href="_images/report_page_homology2.png"><img alt="Homology section of report page (orthologue clusters)" src="_images/report_page_homology2.png" style="width: 696px;" /></a>
+<figcaption>
+<p><span class="caption-text">Homology section of report page (orthologue clusters)</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="publications">
+<h2>Publications<a class="headerlink" href="#publications" title="Permalink to this heading"></a></h2>
 <p>The <strong>Publications</strong> section displays a table of publications related to the gene.</p>
 <a class="reference internal image-reference" href="_images/report_page_publications.png"><img alt="Publications section of report page" src="_images/report_page_publications.png" style="width: 696px;" /></a>
-</div>
-<div class="section" id="other">
-<h2>Other<a class="headerlink" href="#other" title="Permalink to this headline">\uf0c1</a></h2>
+</section>
+<section id="other">
+<h2>Other<a class="headerlink" href="#other" title="Permalink to this heading"></a></h2>
 <p>This last section provides miscellaneous information that doesn’t fit into any of the above categories, e.g., data sets including a gene, protein domain regions for a protein, etc.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -160,7 +181,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, Elsik Lab.</p>
+    <p>&#169; Copyright 2023, Elsik Lab.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

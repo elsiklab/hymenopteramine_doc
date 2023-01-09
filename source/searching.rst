@@ -81,7 +81,7 @@ Another method of searching HymenopteraMine is through the use of **templates** 
 
   ..
 
-As an example, the **GO Term** |rightArrow| **Gene** template queries HymenopteraMine for all genes annotated with a given GO term.
+As an example, the **GO Term** |rightArrow| **Gene** template queries HymenopteraMine for all genes annotated with a given GO term for a selected organism.
 
 .. figure:: images/template_go_term_gene.png
   :width: 696
@@ -92,7 +92,7 @@ As an example, the **GO Term** |rightArrow| **Gene** template queries Hymenopter
 
   ..
 
-The results page shows all the genes having the Gene Ontology term "DNA Binding" in their annotation. When logged in, users may create a new list or add these genes to an existing list to perform further analyses. Click on the **Save as List** button above the table of results, then choose the column to add to the list. See the :ref:`lists` section for more details on creating and saving lists.
+The results page shows all *A. cephalotes* genes having the Gene Ontology term "DNA Binding" (GO\:0003677) in their annotation. When logged in, users may create a new list or add these genes to an existing list to perform further analyses. Click on the **Save as List** button above the table of results, then choose the column to add to the list. See the :ref:`lists` section for more details on creating and saving lists.
 
 
 .. figure:: images/template_go_term_gene_results.png
@@ -143,14 +143,14 @@ Click the **Manage Columns** button to customize the results table layout. Edit 
 Optional filters
 ----------------
 
-Some templates have optional filters that are disabled by default. For example, the GO Term |rightArrow| Gene template has an additional filter for specifying an organism. To enable this filter, click **ON** below **optional**.
+Some templates have optional filters that are disabled by default. For example, the Organism |rightArrow| Gene IDs with their Alias IDs template has an additional filter for specifying a gene source (e.g., RefSeq, Ensembl). To enable this filter, click **ON** under **optional** (red box in figure below).
 
-.. figure:: images/template_go_term_organism_enabled.png
+.. figure:: images/template_optional_filter_enabled.png
   :width: 696
-  :alt: GO Term --> Gene template with organism filter enabled
+  :alt: Organism --> Gene IDs with their Alias IDs template with source filter enabled
   :figclass: align-center
 
-  Example: GO Term |rightArrow| Gene template with organism filter enabled
+  Example: Organism |rightArrow| Gene IDs with their Alias IDs template with source filter enabled
 
   ..
   
@@ -204,7 +204,7 @@ The following examples give a more in-depth demonstration on how to use the Quer
 Example 1: Querying for protein coding genes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Model browser, click **Show** next to **DB Identifier** and **Symbol**, which will add these fields to the query. Notice that these two fields appear below Gene in the **Query Overview** section and at the bottom under **Fields selected for output**.
+In the Model browser, click **Show** next to **Gene ID** and **Symbol**, which will add these fields to the query. Notice that these two fields appear below Gene in the **Query Overview** section and at the bottom under **Fields selected for output**.
 
 
 .. figure:: images/ex1_step1.png
@@ -216,18 +216,27 @@ In the Model browser, click **Show** next to **DB Identifier** and **Symbol**, w
 
   ..
 
-Then click **Constrain** next to **Biotype**. The first drop-down menu defaults to `=` (equals sign). In the second drop-down menu, select **Protein Coding**, then click the **Add to query** button. This adds a constraint to the query to search only for protein coding genes. Notice that the Query Overview section now shows "Biotype = Protein Coding". Also, two types of icons appear next to the attributes. Clicking on the red "X" icon next to an attribute will remove that field or constraint from the query. Clicking on the blue pencil icon next to a constraint brings up the constraint editing window from earlier where changes may be made to the query filters.
+Then click **Constrain** next to **Biotype**. The first drop-down menu defaults to `=` (equals sign). In the second drop-down menu, select **protein_coding**, then click the **Add to query** button. This adds a constraint to the query to search only for protein coding genes.
 
-.. figure:: images/ex1_step2.png
+.. figure:: images/ex1_step2a.png
   :width: 696
   :alt: Step 2: Add a constraint to the query on Biotype
   :figclass: align-center
 
   Step 2: Add a constraint to the query on Biotype
 
+Notice that the Query Overview section now shows "Biotype = protein_coding". Also, two types of icons appear next to the attributes. Clicking on the red "X" icon next to an attribute will remove that field or constraint from the query. Clicking on the blue pencil icon next to a constraint brings up the constraint editing window from earlier where changes may be made to the query filters.
+
+.. figure:: images/ex1_step2b.png
+  :width: 696
+  :alt: Constraint added to query
+  :figclass: align-center
+
+  Constraint added to query
+
   ..
 
-Finally, click on the **Show results** button above the Model browser. The resulting table contains all protein coding genes in the database, with DB Identifier and Gene Symbol as the two table columns.
+Finally, click on the **Show results** button above the Model browser. The resulting table contains all protein coding genes in the database, with Gene ID and Gene Symbol as the two table columns.
 
 .. figure:: images/ex1_step3.png
   :width: 696
@@ -265,18 +274,18 @@ In the Model browser, click the + (plus sign) next to the Chromosome feature cla
 
   ..
 
-Then click **Constrain** next to the attribute **DB Identifier**. In the pop-up window, enter **NW_003791143.1** into the text field, and click **Add to query**. This adds an additional constraint to the query that searches for protein coding genes on a chromosome with the DB identifier `NW_003791143.1`.
+Then click **Constrain** next to the attribute **Chromosome ID**. In the pop-up window, enter **NW_003791143.1** into the text field, and click **Add to query**. This adds an additional constraint to the query that searches for protein coding genes on a chromosome with ID `NW_003791143.1`.
 
 .. figure:: images/ex2_step2.png
   :width: 696
-  :alt: Step 2: Add a constraint to the Chromosome DB Identifier
+  :alt: Step 2: Add a constraint to the Chromosome ID
   :figclass: align-center
 
-  Step 2: Add a constraint to the Chromosome DB Identifier
+  Step 2: Add a constraint to the Chromosome ID
 
   ..
 
-Click the **Show results** button as before to view the results of the query. The columns are the same as in the first example, but notice that now there are only 625 rows in the table (compared to over 500,000 in the first query) due to the additional constraint.
+Click the **Show results** button as before to view the results of the query. The columns are the same as in the first example, but notice that now there are only 625 rows in the table (compared to over 1,400,000 in the first query) due to the additional constraint.
 
 .. figure:: images/ex2_step3.png
   :width: 696
@@ -294,7 +303,7 @@ This final example extends the above query to display all exons for each protein
 
 As above, click on **Query** at the top of the results page to go back to the model browser and edit the query.
 
-In the Model browser, scroll down to locate the **Exon** feature class, and click the + (plus sign) next to Exons to display its attributes. Click **Show** next to **DB Identifier** and **Length**.
+In the Model browser, scroll down to locate the **Exon** feature class, and click the + (plus sign) next to **Exons** to display its attributes. Click **Show** next to **DB Identifier** and **Length**.
 
 .. figure:: images/ex3_step1.png
   :width: 696
@@ -305,7 +314,7 @@ In the Model browser, scroll down to locate the **Exon** feature class, and clic
 
   ..
 
-The **Query Overview** shows the query in progress, with four fields and two constraints. Also notice that a third type of icon, a blue square, appears next to a couple of the attributes. Clicking on a blue square icon next to an attribute brings up a window where the query **Join Style** may be modified. Click on the blue square icon next to **Exon collection** to bring up the Switch Join Style window. The default option is **Show only Genes if they have a Exon**. Change this to **Show all Genes and show Exons if they are present** and click **Add to query**.
+The **Query Overview** shows the query in progress, with four fields and two constraints. The additional exon fields have been added to the **Fields selected for output** section. Also notice that a third type of icon, a blue square, appears next to a couple of the attributes. Clicking on a blue square icon next to an attribute brings up a window where the query **Join Style** may be modified. Click on the blue square icon next to **Exon collection** to bring up the Switch Join Style window. The default option is **Show only Genes if they have a Exon**. Change this to **Show all Genes and show Exons if they are present** and click **Add to query**.
 
 .. figure:: images/ex3_step2.png
   :width: 400
@@ -328,7 +337,7 @@ Click **Show results** to run the query.
 
   ..
 
-Notice that the results table contains the same rows as in the second example, but now there is a new column, **Gene Exons**. For example, looking at the second row, the Gene with DB Identifier 100862997 has 12 exons. Click on the **12 exons** text to expand the table with additional rows containing the DB identifier and Length for each of the 12 exons.
+Notice that the results table contains the same rows as in the second example, but now there is a new column, **Gene Exons**. For example, looking at the second row, the Gene with ID 100862997 has 12 exons. Click on the **12 exons** text to expand the table with additional rows containing the DB identifier and Length for each of the 12 exons.
 
 .. figure:: images/ex3_step4.png
   :width: 696
@@ -379,7 +388,7 @@ Click on the input examples to view a representative set of coordinates in each 
 
 The regions may be extended on either side of the genomic coordinates using the slider or the text field next to it. There is also the option to perform a strand-specific region search using the checkbox at the bottom of the form.
 
-As an example, select **A. mellifera** from the **Select Organism** drop-down, check the box next to **Gene** in the **Select Feature Types** section, and enter the following coordinates into the genomic regions search text field:
+As an example, select **Apis mellifera** (default option) from the **Select Organism** drop-down. In this HymenopteraMine release, there is only one assembly per organism, which is selected by default in the **Select Assembly** drop-down. (If multiple assemblies were available, this drop-down could be used to further filter the results by assembly.) Next, check the box next to **Gene** in the **Select Feature Types** section, and enter the following coordinates into the genomic regions search text field:
 ::
 
      LG5:900000..930000
@@ -387,10 +396,10 @@ As an example, select **A. mellifera** from the **Select Organism** drop-down, c
 
 .. figure:: images/regions_search_example.png
   :width: 696
-  :alt: Example: Genomic regions search on A. mellifera
+  :alt: Example: Genomic regions search on Apis mellifera
   :figclass: align-center
 
-  Example: Genomic regions search on *A. mellifera*
+  Example: Genomic regions search on *Apis mellifera*
 
   ..
 

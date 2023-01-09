@@ -1,11 +1,16 @@
 Report Pages
 ============
 
+.. role:: raw-html(raw)
+    :format: html
+.. |rightArrow| unicode:: U+2B95
+
+
 Every object (e.g., Gene, Protein, Exon) in HymenopteraMine has a report page. The layout of the report page depends on the data available for the object. Report pages may be accessed by clicking on an object name in the results table after running a query.
 
-As an example, on the home page of HymenopteraMine, click on the **Protein** tab in the **Popular Templates** section. (Refer to the :ref:`templates` section for more details on using templates to search the database.) Click on the **Gene Symbol --> Proteins** template. In the text field, enter **LCCH3**, and select **A. mellifera** as the Organism. Then click **Show Results**.
+As an example, on the home page of HymenopteraMine, click on the **Proteins** tab in the **Popular Templates** section. (Refer to the :ref:`templates` section for more details on using templates to search the database.) Click on the **Gene Symbol** |rightArrow| **Proteins** template. In the text field, enter **LCCH3**, and select **A. mellifera** as the Organism. Then click **Show Results**.
 
-Notice that each item in the results table is a hyperlink. Hover over an item to bring up a quick summary window for that item. For example, hover over **LCCH3** to view a summary of the gene with this symbol. The summary contains the gene's biotype, database identifier, description, length, organism, symbol, and source. Similarly, hover over **Q0GQR5_APIME** to view a summary of the protein with this DB Identifier.
+Notice that each item in the results table is a hyperlink. Hover over an item to bring up a quick summary window for that item. For example, hover over **LCCH3** to view a summary of the gene with this symbol. The summary contains the gene's biotype, database identifier, description, length, organism, symbol, and source. Similarly, hover over **Q0GQR5_APIME** to view a summary of the protein with this DB identifier.
 
 .. figure:: images/summary_window_gene.png
   :width: 400
@@ -45,17 +50,17 @@ A **Summary** section near the top of the report provides information on the gen
 Alias and DBxref
 ~~~~~~~~~~~~~~~~
 
-The **Alias and DBxref** section displays a table of aliases and database cross references for the gene. In this example, the gene with DB Identifier 412740 has four aliases and two cross references. Click on the text **4 Alias Names** and **2 Cross References** to expand the table with additional rows containing the ID and Source for each alias and DB Identifier and Source for each cross reference.
+The **Alias and DBxref** section displays tables of aliases and database cross references for the gene. In this example, the gene with RefSeq ID 412740 has four aliases and two cross references.
 
 .. image:: images/report_page_alias_xref.png
   :width: 696
   :alt: Aliases and database cross references section of report page
 
 
-Transcript
-~~~~~~~~~~
+Transcripts
+~~~~~~~~~~~
 
-The **Transcript** section contains information about the gene model, such as transcripts, exons, etc. It includes a diagram visually representing each transcript with its features highlighted (if applicable). In the case of protein coding genes, a table with protein information is also provided.
+The **Transcripts** section contains information about the gene model, such as transcripts, exons, etc. It includes a diagram visually representing each transcript with its features highlighted (if applicable). In the case of protein coding genes, a table with protein information is also provided.
 
 .. image:: images/report_page_transcript.png
   :width: 696
@@ -95,10 +100,23 @@ Homology
 
 The **Homology** section includes information on homologues for the gene.
 
-.. image:: images/report_page_homology.png
+.. figure:: images/report_page_homology.png
   :width: 696
-  :alt: Homology section of report page
+  :alt: Homology section of report page (homologues)
+  :figclass: align-center
 
+  Homology section of report page (homologues)
+
+  ..
+
+.. figure:: images/report_page_homology2.png
+  :width: 696
+  :alt: Homology section of report page (orthologue clusters)
+  :figclass: align-center
+
+  Homology section of report page (orthologue clusters)
+
+  ..
 
 Publications
 ~~~~~~~~~~~~
